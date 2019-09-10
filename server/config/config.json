@@ -6,7 +6,7 @@
         "JWT_EXP": "10m"
     },
     "production": {
-        "MONGODB_URI": "mongodb+srv://fercho:12345@cluster0-t4k6q.mongodb.net/test?retryWrites=true&w=majority",
+        "MONGODB_URI": "mongodb+srv://lfernandoperezfuentes:12345@database01-epkbb.mongodb.net/test?retryWrites=true&w=majority",
         "JWT_SECRET": "SECRET#123",
         "JWT_EXP": "2m"
     }

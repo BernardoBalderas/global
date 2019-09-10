@@ -12,9 +12,7 @@
                                 <ul>
                                     <li><a routerLink="/index" routeLinkActive="active">Inicio</a></li>
                                     <li><a routerLink="/nosotros" routeLinkActive="active">Nosotros</a></li>
-                                    <li><a href="https://shoppingcart-bellalola.herokuapp.com" routeLinkActive="active">Productos</a></li>
                                     <li><a routerLink="/navcruds" routeLinkActive="active">Catalogos</a></li>
-                                    <li><a routerLink="/contacto" routeLinkActive="active">Contacto</a></li>
                                     <li><a><i mat-button [matMenuTriggerFor]="menu" class="material-icons">more_vert</i></a></li>
                                     <mat-menu #menu="matMenu">
                                         <button (click)="onLogout()" mat-menu-item >
@@ -30,13 +28,3 @@
         </div>
     </div>
 </section>
-<!-- <nav>
-    <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a routerLink="/nosotros" routeLinkActive="active">Nosotros</a></li>
-        <li><a routerLink="/productos" routeLinkActive="active">Productos</a></li>
-        <li><a routerLink="/navcruds" routeLinkActive="active">Catalogos</a></li>
-        </ul>
-    </div>
-</nav> -->

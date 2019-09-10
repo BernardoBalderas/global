@@ -88,9 +88,9 @@ ignore = false;
       pdf.line(750, 50, 100, 50);  
       
       var img = new Image();
-      img.src="/assets/img/logo2.png";
-      pdf.addImage(img, 'png', 90, 65);
-      pdf.save("Materia-Prima.pdf");
+      img.src="/assets/img/logo1.jpg";
+      pdf.addImage(img, 'jpg', 90, 65);
+      pdf.save("Reporte.pdf");
       pdf.line(600, 100, 200, 100);
       pdf.addPage('a3', 'portrait');
       this.ignore = false;

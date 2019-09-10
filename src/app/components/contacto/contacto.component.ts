@@ -8,12 +8,12 @@ import * as jsPDF from 'jspdf';
 
 declare var M: any;
 @Component({
-  selector: 'app-supplies',
-  templateUrl: './supplies.component.html',
-  styleUrls: ['./supplies.component.css'],
+  selector: 'app-contacto',
+  templateUrl: './contacto.component.html',
+  styleUrls: ['./contacto.component.css'],
   providers: [SupplieService]
 })
-export class SuppliesComponent implements OnInit {
+export class ContactoComponent implements OnInit {
 constructor(public supplieService: SupplieService) { }
 ignore = false;
 

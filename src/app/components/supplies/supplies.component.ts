@@ -89,7 +89,7 @@ ignore = false;
       
       var img = new Image();
       img.src="/assets/img/logo1.jpg";
-      pdf.addImage(img, 'jpg', 90, 65);
+      pdf.addImage(img, 'jpg', 60, 40);
       pdf.save("Reporte.pdf");
       pdf.line(600, 100, 200, 100);
       pdf.addPage('a3', 'portrait');

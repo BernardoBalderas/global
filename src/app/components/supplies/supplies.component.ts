@@ -79,10 +79,10 @@ ignore = false;
       pdf.setDrawColor("#444444");
       pdf.setFont("arial", "italic");
       pdf.setFontSize(25);    
-      pdf.text("Productos", 360, 30,{ align: "center", width: 500} )
+      pdf.text("Inventario", 360, 30,{ align: "center", width: 500} )
       pdf.setFontSize(13);    
-      pdf.text("La Bella Lola", 600, 85, {align: "left"})     
-      pdf.text("Dolores Hidalgo", 600, 105, { align: "left" })
+      pdf.text("Hotel-Spa Posada Bonita", 600, 85, {align: "left"})     
+      pdf.text("Dolores Hidalgo C.I.N.", 600, 105, { align: "left" })
       pdf.fromHTML(id,165,150,{align: "center",width: 500} );     
       pdf.setDrawColor(255, 0, 0);
       pdf.line(750, 50, 100, 50);  

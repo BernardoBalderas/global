@@ -7,35 +7,35 @@
           <form #clientForm="ngForm" (ngSubmit)="addClient(clientForm)">
             <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]= "clientService.selectedClient._id">
             <div class="row">
-              <div class="imput-field col s12">
+              <div class="form-group">
                 <input type="text" name="first_name" #first_name="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.first_name"
                 placeholder="Nombre">
               </div>
-              <div class="imput-field col s12">
+              <div class="form-group">
                 <input type="text" name="last_name" #last_name="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.last_name"
                 placeholder="Apellido">
               </div>
-              <div class="imput-field col s12">
+              <div class="form-group">
                 <input type="text" name="address" #address="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.address"
                 placeholder="Dirección">
               </div>
-              <div class="imput-field col s12">
+              <div class="form-group">
                 <input type="text" name="phone" #phone="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.phone"
                 placeholder="Telefono">
               </div>
-              <div class="imput-field col s12">
+              <div class="form-group">
                 <input type="text" name="e_mail" #e_mail="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.e_mail"
                 placeholder="Correo Electronico">
               </div>
               <div class="card-action">
                 <div class="input-fiel col s12">
-                  <button class="btn left orange">Save</button>
-                  <button class="btn right red" (click)="resetForm(clientForm)">Clean</button>
+                  <button class="button btn-dark"></button>>Save</button>
+                  <button class="button btn-dark" (click)="resetForm(clientForm)">Clean</button>
                 </div>
               </div>
             </div>

@@ -1,0 +1,71 @@
+<app-navcruds></app-navcruds>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <form #serviceForm="ngForm" (ngSubmit)="add(serviceForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]= "serviceService.selectedService._id">
+            <div class="row">
+              <div class="imput-field col s12">
+                <input type="text" name="title" #title="ngModel" 
+                [(ngModel)] = "serviceService.selectedService.title"
+                placeholder="Ingresar Paquete">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="descripcion" #descripcion="ngModel" 
+                [(ngModel)] = "serviceService.selectedService.descripcion"
+                placeholder="Descripción del paquete">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="precio" #precio="ngModel" 
+                [(ngModel)] = "serviceService.selectedService.precio"
+                placeholder="Precio">
+              </div>
+              <div class="col-4">
+                  <div class="input-field col s12">
+                    <label for="">Imagen</label>
+                    <input type="file"  name="filename"
+                    (change)="cargarImagen($event)">
+                  </div>
+              </div>
+              <div class="card-action">
+                <div class="input-fiel col s12">
+                  <button class="btn orange">Save</button>
+                  <button class="btn right red" (click)="resetForm(serviceForm)">Clean</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col s12">
+      <table>
+        <thead>
+          <th>Servicio</th>
+          <th>Descripción</th>
+          <th>precio</th>
+          <th>Imagen</th>
+          <th>Operaciones</th>
+        </thead>
+        <tbody>
+          <tr *ngFor="let service of serviceService.services">
+              <td> {{ service.title }}</td>
+              <td> {{ service.descripcion }}</td>
+              <td> {{ service.precio }}</td>
+              <td><img width="50px" height="70px" src="/api/services/img/{{service.filename}}" alt=""></td>
+              <td>
+                <a (click)="edit(service)">
+                  <i class="material-icons">edit</i>
+                </a>
+                <a (click)="delete(service._id)">
+                    <i class="material-icons">delete</i>
+                  </a>
+              </td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,87 @@
+<app-navcruds></app-navcruds>
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+      <div class="card">
+        <div class="card-content">
+          <form #clientForm="ngForm" (ngSubmit)="addClient(clientForm)">
+            <input type="hidden" name="_id" #_id="ngModel" [(ngModel)]= "clientService.selectedClient._id">
+            <div class="row">
+              <div class="imput-field col s12">
+                <input type="text" name="first_name" #first_name="ngModel" 
+                [(ngModel)] = "clientService.selectedClient.first_name"
+                placeholder="Nombre">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="last_name" #last_name="ngModel" 
+                [(ngModel)] = "clientService.selectedClient.last_name"
+                placeholder="Apellido">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="address" #address="ngModel" 
+                [(ngModel)] = "clientService.selectedClient.address"
+                placeholder="Dirección">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="phone" #phone="ngModel" 
+                [(ngModel)] = "clientService.selectedClient.phone"
+                placeholder="Telefono">
+              </div>
+              <div class="imput-field col s12">
+                <input type="text" name="e_mail" #e_mail="ngModel" 
+                [(ngModel)] = "clientService.selectedClient.e_mail"
+                placeholder="Correo Electronico">
+              </div>
+              <div class="card-action">
+                <div class="input-fiel col s12">
+                  <button class="btn left orange">Save</button>
+                  <button class="btn right red" (click)="resetForm(clientForm)">Clean</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+        <div class="col s12">
+            <table  id="tabMensaje">
+              <thead>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <div *ngIf="!ignore">
+                    <th>Dirección</th>
+                </div>
+                <th>Telefono</th>
+                <th>Correo Electronico</th>
+                <div *ngIf="!ignore">
+                    <th>Operaciones</th>
+                </div>
+              <tbody>
+                <tr *ngFor="let client of clientService.clients">
+                    <td> {{ client.first_name }}</td>
+                    <td> {{ client.last_name }}</td>
+                    <div *ngIf="!ignore">
+                        <td> {{ client.address }}</td>
+                    </div>
+                    <td> {{ client.phone }}</td>
+                    <td> {{ client.e_mail }}</td>
+                    <td> {{ client.perfil }}</td>
+                    <div *ngIf="!ignore">
+                        <td>
+                            <a (click)="editClient(client)">
+                              <i class="material-icons">edit</i>
+                            </a>
+                            <a (click)="deleteClient(client._id)">
+                                <i class="material-icons">delete</i>
+                              </a>
+                          </td>
+                    </div>
+                  </tr>
+              </tbody>
+              <button class="btn red" (click)="generarPDF()"> Generar PDF</button>
+            </table>
+          </div>
+    </div>
+  </div>
+</div>

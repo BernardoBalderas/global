@@ -1,30 +1,31 @@
 <app-navpages></app-navpages>
-<div class="col s12" id="tabsupplies">
-  <table >
-    <thead>
-      <th>Nombre</th>
-      <th>Marca</th>
-      <th>Cantidad</th>
-      <div *ngIf="!ignore">
-          <th>Operaciones</th>
-      </div>
-    <tbody>
-      <tr *ngFor="let supplie of supplieService.supplies">
-          <td> {{ supplie.name }}</td>
-          <td> {{ supplie.brand }}</td>
-          <td> {{ supplie.quantity }}</td>
-          <div *ngIf="!ignore">
-              <td>
-                  <a (click)="editSupplie(supplie)">
-                    <i class="material-icons">edit</i>
-                  </a>
-                  <a (click)="deleteSupplie(supplie._id)">
-                      <i class="material-icons">delete</i>
-                    </a>
-                </td>
-          </div>
-        </tr>
-    </tbody>
-    <button class="btn red" (click)="generarPDF()"> Generar PDF</button>
-  </table>
-</div>
+<section>
+        <div class="row form-1 tipografia-contact">
+       <form class="col s12">
+         <div class="row">
+           <div class="input-field col s6">
+             <input id="last_name" type="text" class="validate">
+             <label for="last_name">Nombre</label>
+           </div>
+             <div class="input-field col s6">
+               <input id="email" type="email" class="validate">
+               <label for="email">Email</label>
+             </div>
+         </div>
+         <div class="row">
+           <div class="input-field col s12">
+             <input id="telefono" type="number" class="validate">
+             <label for="">Numero de Telefono</label>
+           </div>
+         </div>
+         <div class="row">
+             <div class="input-field col s12">
+               <textarea id="textarea1" class="materialize-textarea"></textarea>
+               <label for="textarea1">Escribe tu Mensaje</label>
+             </div>
+           </div>
+         <a class="waves-effect waves-light btn boton" href="#">Enviar</a>
+       </form>
+     </div>
+      </section>
+      <app-footer></app-footer>

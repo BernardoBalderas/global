@@ -22,7 +22,7 @@ export class SignInComponent implements OnInit {
   serverErrorMessages: string;
   ngOnInit() {
     if(this.userService.isLoggedIn())
-      this.router.navigateByUrl('/index');
+      this.router.navigateByUrl('/supplies');
   }
 
   onSubmit(form : NgForm){

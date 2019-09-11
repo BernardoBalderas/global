@@ -29,7 +29,7 @@ export class SignInComponent implements OnInit {
     this.userService.login(form.value).subscribe(
       res => {
         this.userService.setToken(res['token']);
-        this.router.navigateByUrl('/index');
+        this.router.navigateByUrl('/supplies');
       },
       err =>{
         this.serverErrorMessages = err.error.message;

@@ -10,17 +10,17 @@
               <div class="imput-field col s12">
                 <input type="text" name="name" #name="ngModel" 
                 [(ngModel)] = "supplieService.selectedSupplie.name"
-                placeholder="Nombre libro Dañado">
+                placeholder="Nombre Materia Prima">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="brand" #brand="ngModel" 
                 [(ngModel)] = "supplieService.selectedSupplie.brand"
-                placeholder="Fecha">
+                placeholder="Marca">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="quantity" #quantity="ngModel" 
                 [(ngModel)] = "supplieService.selectedSupplie.quantity"
-                placeholder="Descripción">
+                placeholder="Cantidad">
               </div>
               <div class="card-action">
                 <div class="input-fiel col s12">
@@ -36,9 +36,9 @@
     <div class="col s12" id="tabsupplies">
       <table >
         <thead>
-          <th>Nombre del Libro Dañado</th>
-          <th>Fecha</th>
-          <th>Descripcion</th>
+          <th>Nombre del producto</th>
+          <th>Descripción</th>
+          <th>Cantidad</th>
           <div *ngIf="!ignore">
               <th>Operaciones</th>
           </div>

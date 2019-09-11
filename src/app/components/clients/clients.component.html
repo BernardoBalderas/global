@@ -10,27 +10,27 @@
               <div class="imput-field col s12">
                 <input type="text" name="first_name" #first_name="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.first_name"
-                placeholder="Nombre del Libro">
+                placeholder="z">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="last_name" #last_name="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.last_name"
-                placeholder="Autor">
+                placeholder="Apellido">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="address" #address="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.address"
-                placeholder="Editorial">
+                placeholder="Dirección">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="phone" #phone="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.phone"
-                placeholder="No. de Paginas">
+                placeholder="Telefono">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="e_mail" #e_mail="ngModel" 
                 [(ngModel)] = "clientService.selectedClient.e_mail"
-                placeholder="Categoria">
+                placeholder="Correo Electronico">
               </div>
               <div class="card-action">
                 <div class="input-fiel col s12">
@@ -47,13 +47,13 @@
         <div class="col s12">
             <table  id="tabMensaje">
               <thead>
-                <th>Nombre del Libro</th>
-                <th>Autor</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
                 <div *ngIf="!ignore">
-                    <th>Editorial</th>
+                    <th>Dirección</th>
                 </div>
-                <th>No. de paginas</th>
-                <th>Categoria</th>
+                <th>Telefono</th>
+                <th>Correo Electronico</th>
                 <div *ngIf="!ignore">
                     <th>Operaciones</th>
                 </div>

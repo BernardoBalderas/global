@@ -88,7 +88,7 @@ ignore = false;
       pdf.line(750, 50, 100, 50);  
       
       var img = new Image();
-      img.src="/assets/img/R1.jpg";
+      img.src="/assets/img/R1.png";
       pdf.addImage(img, 'jpg', 60, 40);
       pdf.save("Reporte_libros_dañados.pdf");
       pdf.line(600, 100, 200, 100);

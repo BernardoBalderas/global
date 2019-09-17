@@ -15,7 +15,7 @@ export class ClientService {
   // readonly URL_API = 'http://localhost:3000/api/clients';
 
   //URL HEROKU
-  readonly URL_API = '/api/clients';
+  readonly URL_API = '/api/books';
 
   constructor(public http: HttpClient) { 
     this.selectedClient = new Client();

@@ -1,6 +1,6 @@
 export class Supplie {
 
-    constructor (_id = '', name = '', brand = '', quantity = 0 ,){
+    constructor (_id = '', name = '', brand = '', quantity = '' ,){
         this._id =_id;
         this. name =  name;
         this.brand = brand;
@@ -11,6 +11,6 @@ export class Supplie {
     _id: string;
     name: string;
     brand: string;
-    quantity: number;
+    quantity: string;
 
 }

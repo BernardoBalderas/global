@@ -88,9 +88,8 @@ export class ClientsComponent implements OnInit {
       pdf.setDrawColor(255, 0, 0);
       pdf.line(750, 50, 100, 50);  
       
-      var img = new Image();
-      img.src="/assets/img/R1.png";
-      pdf.addImage(img, 'png', 60, 40);
+    
+    
       pdf.save("Reporte_libros.pdf");
       pdf.line(600, 100, 200, 100);
       pdf.addPage('a3', 'portrait');

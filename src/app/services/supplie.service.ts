@@ -16,7 +16,7 @@ export class SupplieService {
   //  readonly URL_API = 'http://localhost:3000/api/supplies';
 
    //URL HEROKU
-   readonly URL_API = '/api/book-damaged';
+   readonly URL_API = '/api/supplies';
 
   constructor(public http: HttpClient) { 
     this.selectedSupplie = new Supplie();

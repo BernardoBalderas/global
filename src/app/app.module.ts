@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 import { MaterialModule } from './material.module';
 
@@ -67,7 +68,10 @@ import {FilterPipe } from './pipes/filter.pipe';
     HttpClientModule,
     RouteModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDFDMAPqmDSLIzpAyTi2To3I2jv0O0qS1M'
+    })
   ],
      providers: [{
      provide: HTTP_INTERCEPTORS,

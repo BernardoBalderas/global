@@ -1,5 +1,11 @@
 <app-navcruds></app-navcruds>
-<div class="container">
+
+<agm-map [latitude]="lat" [longitude]="lng">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+
+
+<!--<div class="container">
     <div class="row">
       <div class="col s12">
         <div class="card">
@@ -46,4 +52,4 @@
       </div>
     </div>
 </div>
-  
+-->

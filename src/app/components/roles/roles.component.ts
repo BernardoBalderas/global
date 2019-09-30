@@ -14,6 +14,9 @@ declare var M: any;
   providers: [RolService]
 })
 export class RolesComponent implements OnInit {
+  title = 'My first AGM project';
+  lat = 51.678418;
+  lng = 7.809007;
 
   constructor(public rolService: RolService) { }
 

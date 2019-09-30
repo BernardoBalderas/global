@@ -42,10 +42,10 @@ export class InventoriesComponent implements OnInit {
       pdf.setDrawColor("#444444");
       pdf.setFont("arial", "italic");
       pdf.setFontSize(25);    
-      pdf.text("Productos", 360, 30,{ align: "center", width: 500} )
+      pdf.text("Libros", 360, 30,{ align: "center", width: 500} )
       pdf.setFontSize(13);    
-      pdf.text("La Bella Lola Marquesita", 600, 85, {align: "left"})
-      pdf.text("Calle Oaxaca No.8", 600, 105, { align: "left" })     
+      pdf.text("Libreria Dolores", 600, 85, {align: "left"})
+      pdf.text("Av. Educacion Tecnologica", 600, 105, { align: "left" })     
       pdf.text("Dolores Hidalgo, Gto.", 600, 105, { align: "left" })
       pdf.fromHTML(id,165,150,{align: "center",width: 500} );     
       pdf.setDrawColor(255, 0, 0);
@@ -54,7 +54,7 @@ export class InventoriesComponent implements OnInit {
       var img = new Image();
       img.src="/assets/img/logo2.png";
       pdf.addImage(img, 'png', 90, 65);
-      pdf.save("Materia-Prima.pdf");
+      pdf.save("Solicitud-Libros.pdf");
       pdf.line(600, 100, 200, 100);
       pdf.addPage('a3', 'portrait');
       this.ignore = false; 

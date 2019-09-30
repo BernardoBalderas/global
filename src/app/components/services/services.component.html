@@ -10,12 +10,12 @@
               <div class="imput-field col s12">
                 <input type="text" name="title" #title="ngModel" 
                 [(ngModel)] = "serviceService.selectedService.title"
-                placeholder="Ingresar Paquete">
+                placeholder="Nombre de libro">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="descripcion" #descripcion="ngModel" 
                 [(ngModel)] = "serviceService.selectedService.descripcion"
-                placeholder="Descripción del paquete">
+                placeholder="Descripción">
               </div>
               <div class="imput-field col s12">
                 <input type="text" name="precio" #precio="ngModel" 
@@ -43,7 +43,7 @@
     <div class="col s12">
       <table>
         <thead>
-          <th>Servicio</th>
+          <th>Libro</th>
           <th>Descripción</th>
           <th>precio</th>
           <th>Imagen</th>

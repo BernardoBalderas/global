@@ -10,7 +10,7 @@
                         <input id="icon_prefix" type="text"  class="validate" [(ngModel)]="filterInventory">
                         <label for="icon_prefix">Search...</label>
                     </div>
-                    <button class="btn red" (click)="generarPDF()"> Generar PDF</button>
+                  <!--  <button class="btn red" (click)="generarPDF()"> Generar PDF</button>-->
                 </ul>   
             </div> 
     </div>
@@ -41,7 +41,7 @@
                               <div *ngIf="inventory.quantity<=10">
                                   <a (click)="functionNoStock()">
                                   <i   id="" style="color: #000000" 
-                                  class="material-icons" title="Comprar Materia Prima">remove</i>
+                                  class="material-icons" title="Adquirir Nuevo Libro">remove</i>
                                   </a>
                               </div>
                               <div *ngIf="inventory.quantity>11 && inventory.quantity<18">

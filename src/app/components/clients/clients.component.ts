@@ -84,7 +84,7 @@ export class ClientsComponent implements OnInit {
       pdf.setFontSize(13);    
       pdf.text("Libreria Dolores", 600, 85, {align: "left"}) 
       pdf.text("Av. Educacion Tecnologica", 600, 105, { align: "left" })
-      pdf.text("Dolores Hidalgo, Gto.", 600, 105, { align: "left" })
+      pdf.text("Dolores Hidalgo, Gto.", 900, 160, { align: "left" })
       pdf.fromHTML(id,165,150,{align: "center",width: 500} );     
       pdf.setDrawColor(255, 0, 0);
       pdf.line(750, 50, 100, 50);  

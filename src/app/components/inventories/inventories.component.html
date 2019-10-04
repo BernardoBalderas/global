@@ -10,7 +10,7 @@
                         <input id="icon_prefix" type="text"  class="validate" [(ngModel)]="filterInventory">
                         <label for="icon_prefix">Search...</label>
                     </div>
-                  <!--  <button class="btn red" (click)="generarPDF()"> Generar PDF</button>-->
+                 
                 </ul>   
             </div> 
     </div>
@@ -31,26 +31,7 @@
                           <td> {{ inventory.name }}</td>
                           <td> {{ inventory.brand }}</td>
                           <td> {{ inventory.quantity }}</td>
-                        <!--<div *ngIf="!ignore">
-                          <td>
-                              <div *ngIf="inventory.quantity>=20">
-                                  <a (click)="functionStock()">
-                                    <i style="color: #000000" class="material-icons" title="Materia Prima Suficiente" >add</i> 
-                                  </a>
-                              </div>
-                              <div *ngIf="inventory.quantity<=10">
-                                  <a (click)="functionNoStock()">
-                                  <i   id="" style="color: #000000" 
-                                  class="material-icons" title="Adquirir Nuevo Libro">remove</i>
-                                  </a>
-                              </div>
-                              <div *ngIf="inventory.quantity>11 && inventory.quantity<18">
-                                <a (click)="functionMediumStock()">
-                                    <i style="color: #000000" class="material-icons" title="Materia Prima por Agotarse" >drag_handle</i>
-                                    </a>
-                              </div>
-                          </td>
-                        </div>  -->                     
+                                            
                       </tr>                      
                     </tbody>
                   </table>

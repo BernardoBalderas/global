@@ -37,10 +37,10 @@ app.use((err, req, res, next) => {
 
 app.use(morgan('dev'));
 app.use(express.json());
-app.use(express.static('./dist/mean-bellalola'));
+app.use(express.static('./dist/mean-libreriadolores'));
 
 app.get('/',(req, res) => {
-    res.sendFile(path.join(__dirname, '/dist/mean-bellalola/server/index.js'));
+    res.sendFile(path.join(__dirname, '/dist/mean-libreriadolores/server/index.js'));
 });
 
 app.use(express.urlencoded({limit: '10mb', extended: true}));
@@ -65,9 +65,7 @@ app.use(process.env.URL_PRODUCT ,require('./routes/product.routes'));
 app.use(process.env.URL_SERVICE ,require('./routes/service.routes'));
 app.use(process.env.URL_USER ,require('./routes/user.routes'));
 app.use(process.env.URL_CLIENT ,require('./routes/client.routes'));
-app.use(process.env.URL_ROL ,require('./routes/rol.routes'));
 app.use(process.env.URL_INDEX ,require('./routes/index.router'));
-app.use(process.env.URL_PUBLICIDAD ,require('./routes/publicidad.routes'));
 app.use(process.env.URL_SUPPLIE ,require('./routes/supplie.routes'));
 
 

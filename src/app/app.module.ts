@@ -18,21 +18,15 @@ import {UserComponent} from './components/user/user.component';
 import {UserProfileComponent} from './components/user-profile/user-profile.component';
 import { AuthGuard } from './auth/auth.guard';import {AuthInterceptor} from './auth/auth.interceptor';
 import {UserService} from './services/user.service';
-
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ServicesComponent} from './components/services/services.component';
 import { UsersComponent} from './components/users/users.component';
 import { ClientsComponent} from './components/clients/clients.component';
-import { RolesComponent} from './components/roles/roles.component';
-import { NavcrudsComponent } from './components/navcruds/navcruds.component';
 import { NavpagesComponent } from './components/navpages/navpages.component';
 import { IndexComponent } from './components/index/index.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { NosotrosComponent } from './components/nosotros/nosotros.component';
-import { ContactoComponent } from './components/contacto/contacto.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { PublicidadComponent } from './components/publicidad/publicidad.component';
 import { SuppliesComponent } from './components/supplies/supplies.component';
 import { InventoriesComponent } from './components/inventories/inventories.component';
 import {FilterPipe } from './pipes/filter.pipe';
@@ -46,18 +40,13 @@ import {FilterPipe } from './pipes/filter.pipe';
     ServicesComponent,
     ClientsComponent,
     UsersComponent,
-    RolesComponent,
-    NavcrudsComponent,
     NavpagesComponent,
     IndexComponent,
     FooterComponent,
-    NosotrosComponent,
-    ContactoComponent,
     UserComponent,
     SignUpComponent,
     UserProfileComponent,
     SignInComponent,
-    PublicidadComponent,
     SuppliesComponent,
     InventoriesComponent,
     FilterPipe

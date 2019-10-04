@@ -52,23 +52,12 @@ export class InventoriesComponent implements OnInit {
       pdf.line(750, 50, 100, 50);  
       
       var img = new Image();
-      img.src="/assets/img/logo2.png";
       pdf.addImage(img, 'png', 90, 65);
       pdf.save("Solicitud-Libros.pdf");
       pdf.line(600, 100, 200, 100);
       pdf.addPage('a3', 'portrait');
       this.ignore = false; 
   }
-  functionStock() {
-    M.toast({html: 'Materia Prima Suficiente'});
-  }
-  functionMediumStock(){
-    M.toast({html: 'Materia Prima por Agotarse'});
-  }
-  functionNoStock(){
-    M.toast({html: 'Comprar Materia Prima'});
-  }
- 
-  
+   
 
 }
